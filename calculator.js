@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const app=express();
 
@@ -7,7 +8,7 @@ app.get("/", function(req,res){
 });
 
 app.post("/", function(req,res){
-  res.send("Thanks");
+  res.send("Thanks for postng that");
 });
 
 app.listen(3000, function(){
